@@ -18,7 +18,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={() => setCount((count) => count + 1)} style={{ marginRight: '10px' }}>
           count++
         </button>
         <button onClick={() => setCount((count) => count - 1)}>
@@ -27,10 +27,10 @@ function App() {
         <br />
         <br />
       <button>
-        {count}
+        Your Count is : {count}
       </button>
         <p>
-          This is Testing For React App with Vite and GitHub Actions {count}
+          This is Testing For React App with Vite and GitHub Actions..
         </p>
       </div>
       <p className="read-the-docs">
