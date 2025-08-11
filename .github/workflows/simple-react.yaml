@@ -20,7 +20,10 @@ jobs:
 
       - name: Build the project
         run: npm run build
-      
+  deploy:
+    runs-on: self-hosted
+    needs: build
+    steps:    
       - name: Upload to S3
         uses: jakejarvis/s3-sync-action@master
         with:
