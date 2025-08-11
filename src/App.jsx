@@ -24,6 +24,11 @@ function App() {
         <button onClick={() => setCount((count) => count - 1)}>
           count--
         </button>
+        <br />
+        <br />
+      <button>
+        {count}
+      </button>
         <p>
           This is Testing For React App with Vite and GitHub Actions {count}
         </p>
