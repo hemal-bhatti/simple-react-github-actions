@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -19,13 +19,13 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is + {count}
+          count++
         </button>
         <button onClick={() => setCount((count) => count - 1)}>
-          count is - {count}
+          count--
         </button>
         <p>
-          This is Testing For React App with Vite and GitHub Actions
+          This is Testing For React App with Vite and GitHub Actions {count}
         </p>
       </div>
       <p className="read-the-docs">
